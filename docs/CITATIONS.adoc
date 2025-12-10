@@ -1,0 +1,36 @@
+= defiant - Citation Guide
+:toc:
+
+== BibTeX
+
+[source,bibtex]
+----
+@software{defiant_2025,
+  author = {Polymath, Hyper},
+  title = {defiant},
+  year = {2025},
+  url = {https://github.com/hyperpolymath/defiant},
+  license = {AGPL-3.0-or-later}
+}
+----
+
+== Harvard Style
+
+Polymath, H. (2025) _defiant_ [Computer software]. Available at: https://github.com/hyperpolymath/defiant
+
+== OSCOLA
+
+Hyper Polymath, 'defiant' (2025) <https://github.com/hyperpolymath/defiant>
+
+== MLA
+
+Polymath, Hyper. "defiant." 2025, github.com/hyperpolymath/defiant.
+
+== APA 7
+
+Polymath, H. (2025). _defiant_ [Computer software]. GitHub. https://github.com/hyperpolymath/defiant
+
+== See Also
+
+* link:../CITATION.cff[CITATION.cff]
+* link:../codemeta.json[codemeta.json]
