@@ -1,0 +1,76 @@
+= defiant
+Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
+:toc: macro
+:icons: font
+:source-highlighter: rouge
+:experimental:
+:url-github: https://github.com/hyperpolymath/defiant
+:url-gitlab: https://gitlab.com/hyperpolymath/defiant
+:url-bitbucket: https://bitbucket.org/hyperpolymath/defiant
+:url-codeberg: https://codeberg.org/hyperpolymath/defiant
+
+Defiance testing framework for authorization bypass detection
+
+image:https://img.shields.io/badge/RSR-Certified-gold[RSR Certified]
+image:https://img.shields.io/badge/License-AGPL%20v3-blue[License]
+
+toc::[]
+
+== Overview
+
+defiant is part of the link:https://rhodium.sh[Rhodium Standard] (RSR) ecosystem.
+
+Domain: *software-development*
+
+== Installation
+
+[source,bash]
+----
+# Clone from GitHub (primary)
+git clone {url-github}
+
+# Or from mirrors
+git clone {url-gitlab}
+git clone {url-codeberg}
+----
+
+== RSR Stack
+
+This project follows RSR conventions:
+
+* ✅ ReScript for frontend/logic
+* ✅ Deno for JS runtime
+* ✅ WASM for performance-critical code
+* ✅ Rust/OCaml/Haskell for systems/proofs
+* ✅ Guile/Scheme for configuration
+* ❌ No TypeScript
+* ❌ No Go
+* ❌ No npm
+
+== Mirrors
+
+[cols="1,2"]
+|===
+| Platform | URL
+
+| GitHub (primary) | {url-github}
+| GitLab | {url-gitlab}
+| Bitbucket | {url-bitbucket}
+| Codeberg | {url-codeberg}
+|===
+
+== License
+
+Licensed under AGPL-3.0-or-later OR LicenseRef-Palimpsest-0.5.
+
+See link:LICENSE[LICENSE] for details.
+
+== Contributing
+
+See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc].
+
+== Metadata
+
+* Domain: software-development
+* Framework: RSR (Rhodium Standard Repository)
+* Dublin Core: link:.well-known/dc.xml[.well-known/dc.xml]
