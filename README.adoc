@@ -11,15 +11,12 @@ Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
 
 Defiance testing framework for authorization bypass detection
 
-image:https://img.shields.io/badge/RSR-Certified-gold[RSR Certified]
+image:https://img.shields.io/badge/RSR-Certified-gold[RSR Certified,link=https://github.com/hyperpolymath/rhodium-standard-repositories]
 image:https://img.shields.io/badge/License-AGPL%20v3-blue[License]
 
 toc::[]
 
 == Overview
-
-defiant is part of the link:https://rhodium.sh[Rhodium Standard] (RSR) ecosystem.
-
 Domain: *software-development*
 
 == Installation
@@ -33,19 +30,6 @@ git clone {url-github}
 git clone {url-gitlab}
 git clone {url-codeberg}
 ----
-
-== RSR Stack
-
-This project follows RSR conventions:
-
-* ✅ ReScript for frontend/logic
-* ✅ Deno for JS runtime
-* ✅ WASM for performance-critical code
-* ✅ Rust/OCaml/Haskell for systems/proofs
-* ✅ Guile/Scheme for configuration
-* ❌ No TypeScript
-* ❌ No Go
-* ❌ No npm
 
 == Mirrors
 
