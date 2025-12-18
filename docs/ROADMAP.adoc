@@ -1,0 +1,183 @@
+// SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+// SPDX-FileCopyrightText: 2025 Jonathan D.A. Jewell
+= DEFIANT Ecosystem Roadmap
+:toc:
+:toclevels: 3
+
+== Overview
+
+*Project:* DEFIANT Ecosystem +
+*Version:* 0.8.1 +
+*Status:* Alpha (80% complete) +
+*Last Updated:* 2025-12-17
+
+DEFIANT is a multi-component system for intelligent package routing across immutable operating systems (OSTree, Flatpak, Podman, and traditional package managers).
+
+== Current Status
+
+[cols="1,1,1,2"]
+|===
+|Component |Language |Status |Description
+
+|DEFIANT
+|Ada 2022
+|80% complete
+|TUI package manager with DNF integration
+
+|AUDITOR
+|Rust
+|Reference impl
+|System inventory and metadata extraction
+
+|CONDUCTOR
+|Elixir
+|Planned
+|Routing orchestrator and decision engine
+|===
+
+== Completed Milestones
+
+=== Milestone 1-4 (Complete - 2025-12-15)
+
+* [x] TUI Foundation - Interactive terminal interface using Malef
+* [x] Package Display - DNF package listing and search
+* [x] Interactive List - Package selection and navigation
+* [x] DNF Operations - Install/remove/update with transaction preview
+
+== Active Development
+
+=== Milestone 5: CONDUCTOR Integration (In Progress)
+
+*Target:* 2026-01 +
+*Priority:* HIGH
+
+.Tasks
+. [ ] Implement Desktop_File_Parser.adb
+. [ ] Implement Systemd_Detector.adb
+. [ ] Implement Package_Analyzer.adb
+. [ ] Implement HTTP_Client using Ada Web Server (AWS)
+. [ ] Implement CONDUCTOR_Client with JSON
+. [ ] Update main.adb with routing workflow
+. [ ] Create multi-target executors (OSTree/Flatpak/Podman/Distrobox)
+. [ ] Create CONDUCTOR Elixir API endpoints
+. [ ] Set up Docker Compose integration testing
+
+== Planned Milestones
+
+=== Milestone 6: Multi-Target Execution
+
+*Target:* 2026-02
+
+* Package routing to appropriate targets:
+** OSTree -> `rpm-ostree install`
+** Flatpak -> `flatpak install`
+** Podman -> `podman run`
+** Distrobox -> `distrobox create + enter + install`
+** Toolbox -> `toolbox create + run`
+* Reversibility proofs for each operation
+* User confirmation with rationale display
+
+=== Milestone 7: Production Release (v1.0.0)
+
+*Target:* 2026-03
+
+* Full integration testing
+* Documentation completion
+* Package distribution (Flatpak, Fedora COPR)
+* SPARK formal verification for critical paths
+
+== Technical Architecture
+
+----
+USER INTERACTION (DEFIANT Ada TUI)
+          |
+          | 1. User marks packages
+          v
+DEFIANT: Package Analysis
+- Extract RPM metadata
+- Parse desktop files
+- Detect systemd units
+- Build Package_Capabilities record
+          |
+          | 2. HTTP POST to CONDUCTOR /api/v1/route
+          v
+CONDUCTOR: Routing Decision (Elixir)
+- Analyze package characteristics
+- Apply decision matrix
+- Determine optimal target
+- Calculate reversibility proof
+          |
+          | 3. HTTP Response
+          v
+DEFIANT: Transaction Preview & Execute
+----
+
+== Security & Compliance
+
+=== RSR Compliance (2025-12-17 Audit)
+
+[cols="1,1,2"]
+|===
+|Check |Status |Details
+
+|SHA-pinned Actions
+|PASS
+|All 8 workflows use SHA-pinned GitHub Actions
+
+|SPDX Headers
+|PASS
+|All files have proper license identifiers
+
+|Permissions
+|PASS
+|All workflows declare minimum required permissions
+
+|HTTPS Only
+|PASS
+|No insecure HTTP URLs in codebase
+
+|No Weak Crypto
+|PASS
+|SHA256+ required for security contexts
+
+|security.txt
+|PASS
+|Valid RFC 9116 security.txt with expiry 2026-12-17
+|===
+
+=== Security CI/CD
+
+* OSSF Scorecard - Weekly security scans
+* TruffleHog - Secret detection
+* CodeQL - Static analysis (when source added)
+* Dependabot - Automated dependency updates
+
+== Future Roadmap (Post-1.0)
+
+=== v1.1 - Extended Package Manager Support
+
+* APT backend (Debian/Ubuntu)
+* Pacman backend (Arch)
+* Zypper backend (openSUSE)
+
+=== v1.2 - Advanced Features
+
+* Parallel downloads
+* Offline caching
+* User preference learning
+
+=== v2.0 - SPARK Verification
+
+* Formal verification of critical operations
+* Mathematical proofs of correctness
+* Safety-critical deployment option
+
+== Contributing
+
+See link:../CONTRIBUTING.adoc[CONTRIBUTING.adoc] for development guidelines.
+
+== References
+
+* link:../STATE.scm[STATE.scm] - Project checkpoint and context
+* link:../META.scm[META.scm] - Architecture decisions
+* link:../ECOSYSTEM.scm[ECOSYSTEM.scm] - Component relationships

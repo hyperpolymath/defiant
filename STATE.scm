@@ -12,10 +12,10 @@
 ;;;============================================================================
 
 (define metadata
-  '((version . "0.8.0")
+  '((version . "0.8.1")
     (schema-version . "1.0")
     (created . "2025-12-15")
-    (updated . "2025-12-15")
+    (updated . "2025-12-17")
     (project . "DEFIANT Ecosystem")
     (repo . "github.com/hyperpolymath/defiant")))
 
@@ -226,6 +226,15 @@
 
 (define session-history
   '((snapshots
+     ((date . "2025-12-17")
+      (session . "scm-security-audit")
+      (accomplishments
+       ("Fixed security.txt expiry date placeholder"
+        "SHA-pinned all GitHub Actions (8 workflows)"
+        "Added SPDX headers to all workflows"
+        "Added permissions declarations to all workflows"
+        "Updated STATE.scm metadata"))
+      (notes . "Security audit and RSR compliance improvements"))
      ((date . "2025-12-15")
       (session . "state-management-implementation")
       (accomplishments
@@ -261,11 +270,11 @@
 
 (define state-summary
   '((project . "DEFIANT Ecosystem")
-    (version . "0.8.0")
+    (version . "0.8.1")
     (overall-completion . 80)
     (next-milestone . "Milestone 5: CONDUCTOR Integration")
     (critical-blockers . 0)
     (high-priority-issues . 0)
-    (updated . "2025-12-15")))
+    (updated . "2025-12-17")))
 
 ;;; End of STATE.scm
