@@ -1,0 +1,255 @@
+// SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+// SPDX-FileCopyrightText: 2025 Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
+
+= Defiant Roadmap
+:toc: macro
+:toclevels: 2
+:icons: font
+
+Development roadmap for the Defiant authorization bypass detection framework.
+
+toc::[]
+
+== Current State: v0.1.0 (Infrastructure)
+
+[cols="1,3,1"]
+|===
+| Item | Description | Status
+
+| Repository Structure
+| RSR-compliant project skeleton
+| ✓ Done
+
+| CI/CD Pipelines
+| 11 GitHub Actions workflows
+| ✓ Done
+
+| Language Policy
+| RSR enforcement (anti-TypeScript, anti-npm, anti-Go)
+| ✓ Done
+
+| Security Scanning
+| CodeQL, TruffleHog, OpenSSF Scorecard
+| ✓ Done
+
+| Multi-Mirror Sync
+| GitHub → GitLab, Bitbucket, Codeberg
+| ✓ Done
+
+| Editor Config
+| Multi-language support (.editorconfig)
+| ✓ Done
+
+| License Structure
+| MIT OR AGPL-3.0-or-later + Palimpsest
+| ✓ Done
+|===
+
+== Phase 1: Foundation
+
+=== 1.1 Project Metadata
+
+[cols="1,3,1"]
+|===
+| Item | Description | Status
+
+| STATE.scm
+| Project checkpoint and AI context preservation
+| ○ Pending
+
+| META.scm
+| Architecture decisions and development practices
+| ○ Pending
+
+| ECOSYSTEM.scm
+| Project ecosystem relationships
+| ○ Pending
+
+| CITATION.cff
+| Standard citation metadata
+| ○ Pending
+
+| codemeta.json
+| CodeMeta/JSON-LD metadata
+| ○ Pending
+|===
+
+=== 1.2 Standards Compliance
+
+[cols="1,3,1"]
+|===
+| Item | Description | Status
+
+| .well-known/security.txt
+| RFC 9116 security contact
+| ○ Pending
+
+| .well-known/ai.txt
+| AI usage consent policy
+| ○ Pending
+
+| .well-known/humans.txt
+| Team and project info
+| ○ Pending
+
+| SECURITY.md
+| Security policy document
+| ○ Pending
+
+| CONTRIBUTING.adoc
+| Contribution guidelines
+| ○ Pending
+|===
+
+=== 1.3 Build System
+
+[cols="1,3,1"]
+|===
+| Item | Description | Status
+
+| justfile
+| Task runner with actual implementations
+| ○ Pending
+
+| guix.scm
+| Complete Guix package definition
+| ○ Pending
+
+| flake.nix
+| Nix flake for reproducible builds
+| ○ Pending
+
+| Containerfile
+| OCI container definition
+| ○ Pending
+|===
+
+== Phase 2: Core Framework
+
+=== 2.1 Architecture Design
+
+* Authorization model abstraction layer
+* Bypass pattern detection engine
+* Test case specification format
+* Report generation system
+
+=== 2.2 Core Implementation (Rust)
+
+[cols="1,3"]
+|===
+| Component | Description
+
+| `defiant-core`
+| Core authorization bypass detection logic
+
+| `defiant-patterns`
+| Library of known bypass patterns
+
+| `defiant-cli`
+| Command-line interface
+
+| `defiant-report`
+| Report generation (JSON, HTML, SARIF)
+|===
+
+=== 2.3 Language Bindings
+
+[cols="1,2"]
+|===
+| Binding | Purpose
+
+| ReScript
+| Web interface and integrations
+
+| WASM
+| Browser-based testing
+
+| Gleam
+| Backend service integration
+|===
+
+== Phase 3: Pattern Library
+
+=== 3.1 Authorization Bypass Categories
+
+* Broken Access Control (OWASP A01:2021)
+* IDOR (Insecure Direct Object References)
+* Privilege Escalation patterns
+* JWT/Token manipulation
+* Path traversal in authorization
+* Role-based access control bypasses
+* Multi-tenancy isolation failures
+
+=== 3.2 Detection Strategies
+
+* Static analysis patterns
+* Dynamic testing hooks
+* Fuzzing integration
+* Policy comparison engines
+
+== Phase 4: Integrations
+
+=== 4.1 CI/CD Integration
+
+* GitHub Actions
+* GitLab CI
+* Generic webhook support
+
+=== 4.2 Security Tool Integration
+
+* SARIF output for IDE integration
+* OWASP ZAP plugin
+* Burp Suite extension
+* Custom API for third-party tools
+
+== Phase 5: Documentation & Ecosystem
+
+=== 5.1 Documentation
+
+* User guide
+* API reference
+* Pattern contribution guide
+* Architecture documentation
+
+=== 5.2 Ecosystem
+
+* Example test suites
+* Community pattern repository
+* Integration templates
+
+== Version Targets
+
+[cols="1,2,1"]
+|===
+| Version | Milestone | Target
+
+| v0.1.0
+| Infrastructure complete
+| ✓ Current
+
+| v0.2.0
+| Metadata and standards compliance
+| TBD
+
+| v0.3.0
+| Build system complete
+| TBD
+
+| v0.5.0
+| Core framework MVP
+| TBD
+
+| v0.7.0
+| Pattern library foundation
+| TBD
+
+| v1.0.0
+| Production-ready release
+| TBD
+|===
+
+== Contributing
+
+This roadmap is a living document. Contributions, suggestions, and feedback are welcome.
+
+See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] for guidelines (forthcoming).

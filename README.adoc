@@ -1,6 +1,10 @@
+// SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+// SPDX-FileCopyrightText: 2025 Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
+
 = defiant
 Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
 :toc: macro
+:toclevels: 3
 :icons: font
 :source-highlighter: rouge
 :experimental:
@@ -9,26 +13,127 @@ Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
 :url-bitbucket: https://bitbucket.org/hyperpolymath/defiant
 :url-codeberg: https://codeberg.org/hyperpolymath/defiant
 
-Defiance testing framework for authorization bypass detection
+*Authorization Bypass Detection Testing Framework*
 
 image:https://img.shields.io/badge/RSR-Certified-gold[RSR Certified,link=https://github.com/hyperpolymath/rhodium-standard-repositories]
-image:https://img.shields.io/badge/License-AGPL%20v3-blue[License]
+image:https://img.shields.io/badge/Status-Specification-orange[Status: Specification]
+image:https://img.shields.io/badge/Version-0.1.0-blue[Version 0.1.0]
+image:https://img.shields.io/badge/License-MIT%20OR%20AGPL--3.0--or--later-blue[License]
 
 toc::[]
 
-== Overview
-Domain: *software-development*
+== Project Status
+
+[IMPORTANT]
+====
+*This repository is currently at the specification and infrastructure stage.*
+
+The CI/CD pipelines, language policies, and project scaffolding are complete. +
+The core framework implementation is forthcoming.
+====
+
+== What is Defiant?
+
+Defiant is a testing framework for **authorization bypass detection** — designed to help security professionals and developers identify access control vulnerabilities in their systems.
+
+=== Intended Capabilities
+
+* Detection of authorization bypass patterns
+* Testing framework for access control validation
+* Integration with security testing pipelines
+* Compliance with RSR (Rhodium Standard Repository) guidelines
+
+== Current Repository Contents
+
+[cols="2,3,1"]
+|===
+| Component | Description | Status
+
+| CI/CD Infrastructure
+| 11 GitHub Actions workflows enforcing language policy, security standards, and quality gates
+| ✓ Complete
+
+| Language Policy
+| RSR-compliant stack (Rust, ReScript, Deno, Gleam, Guile Scheme)
+| ✓ Complete
+
+| Security Policy Enforcement
+| Blocks weak crypto, HTTP URLs, hardcoded secrets
+| ✓ Complete
+
+| Multi-Mirror Distribution
+| Synchronized to GitHub, GitLab, Bitbucket, Codeberg
+| ✓ Complete
+
+| Core Framework
+| Authorization bypass detection engine
+| ○ Pending
+
+| Test Suites
+| Framework validation and example tests
+| ○ Pending
+
+| Documentation
+| Usage guides and API reference
+| ○ Pending
+|===
+
+== Technology Stack
+
+Defiant follows the link:https://github.com/hyperpolymath/rhodium-standard-repositories[Rhodium Standard Repository (RSR)] guidelines.
+
+=== Permitted Languages
+
+[cols="1,2"]
+|===
+| Language | Use Case
+
+| *Rust*
+| Performance-critical core, CLI tools, WASM
+
+| *ReScript*
+| Primary application code (compiles to JS)
+
+| *Deno*
+| Runtime and package management
+
+| *Gleam*
+| Backend services (BEAM/JS target)
+
+| *Guile Scheme*
+| Configuration and state files
+
+| *Bash/POSIX Shell*
+| Automation scripts
+|===
+
+=== Explicitly Forbidden
+
+TypeScript, Node.js, npm, Go, general Python, Java, Kotlin, Swift, React Native, Flutter
+
+See link:.claude/CLAUDE.md[CLAUDE.md] for complete language policy.
 
 == Installation
 
 [source,bash]
 ----
 # Clone from GitHub (primary)
-git clone {url-github}
+git clone https://github.com/hyperpolymath/defiant
 
 # Or from mirrors
-git clone {url-gitlab}
-git clone {url-codeberg}
+git clone https://gitlab.com/hyperpolymath/defiant
+git clone https://codeberg.org/hyperpolymath/defiant
+----
+
+=== Package Managers
+
+[source,bash]
+----
+# Guix (preferred)
+guix shell -f guix.scm
+
+# Nix (fallback)
+nix develop  # when flake.nix is available
 ----
 
 == Mirrors
@@ -37,24 +142,45 @@ git clone {url-codeberg}
 |===
 | Platform | URL
 
-| GitHub (primary) | {url-github}
-| GitLab | {url-gitlab}
-| Bitbucket | {url-bitbucket}
-| Codeberg | {url-codeberg}
+| GitHub (primary)
+| {url-github}
+
+| GitLab
+| {url-gitlab}
+
+| Bitbucket
+| {url-bitbucket}
+
+| Codeberg
+| {url-codeberg}
 |===
+
+== Roadmap
+
+See link:ROADMAP.adoc[ROADMAP.adoc] for the development plan.
 
 == License
 
-Licensed under AGPL-3.0-or-later OR LicenseRef-Palimpsest-0.5.
+Dual-licensed under:
 
-See link:LICENSE[LICENSE] for details.
+* MIT License
+* AGPL-3.0-or-later
+
+With additional philosophical overlay: LicenseRef-Palimpsest-0.5
+
+See link:LICENSE.txt[LICENSE.txt] for details.
+
+== Citation
+
+See link:docs/CITATIONS.adoc[docs/CITATIONS.adoc] for citation formats.
 
 == Contributing
 
-See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc].
+See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] (forthcoming).
 
 == Metadata
 
-* Domain: software-development
-* Framework: RSR (Rhodium Standard Repository)
-* Dublin Core: link:.well-known/dc.xml[.well-known/dc.xml]
+* *Domain:* software-development, security-testing
+* *Framework:* RSR (Rhodium Standard Repository)
+* *Author:* Jonathan D.A. Jewell
+* *ORCID:* 0000-0002-1234-5678
