@@ -168,7 +168,7 @@ See link:ROADMAP.adoc[ROADMAP.adoc] for the development plan.
 Dual-licensed under:
 
 * Palimpsest-MPL-1.0 License
-* AGPL-3.0-or-later
+* PMPL-1.0-or-later
 
 With additional philosophical overlay: LicenseRef-Palimpsest-0.5
 
