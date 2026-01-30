@@ -1,4 +1,4 @@
-;; SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+;; SPDX-License-Identifier: PMPL-1.0-or-later
 ;; SPDX-FileCopyrightText: 2025 Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
 ;; ECOSYSTEM.scm - Project ecosystem positioning and relationships
 ;; Media Type: application/vnd.ecosystem+scm
@@ -22,7 +22,7 @@
         ((relationship . "sibling-standard")
          (description . "RSR compliance and language policy foundation")
          (integration . "enforces-standards")))
-      (gitvisor
+      (git-hud
         ((relationship . "infrastructure")
          (description . "Repository management and automation")
          (integration . "state-file-sync")))
@@ -34,7 +34,7 @@
         ((relationship . "sibling-standard")
          (description . "Normative documentation framework")
          (integration . "documentation-standards")))
-      (palimpsest-licence
+      (palimpsest-license
         ((relationship . "philosophical-foundation")
          (description . "License philosophy overlay")
          (integration . "license-structure")))
