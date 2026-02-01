@@ -1,11 +1,10 @@
-image:[License,link="https://github.com/hyperpolymath/palimpsest-license"]
-
-// SPDX-License-Identifier: PMPL-1.0
+image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
+// SPDX-License-Identifier: PMPL-1.0-or-later
 // SPDX-FileCopyrightText: 2025 hyperpolymath
 
 = defiant
 
-image:https://img.shields.io/badge/license-Palimpsest--MPL--1.0-purple.svg[Palimpsest-MPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"] image:https://img.shields.io/badge/philosophy-Palimpsest-purple.svg[Palimpsest,link="https://github.com/hyperpolymath/palimpsest-licence"]
+image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
 Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
 :toc: macro
 :toclevels: 3
@@ -22,7 +21,7 @@ Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
 image:https://img.shields.io/badge/RSR-Certified-gold[RSR Certified,link=https://github.com/hyperpolymath/rhodium-standard-repositories]
 image:https://img.shields.io/badge/Status-Specification-orange[Status: Specification]
 image:https://img.shields.io/badge/Version-0.1.0-blue[Version 0.1.0]
-image:https://img.shields.io/badge/License-MIT%20OR%20AGPL--3.0--or--later-blue[License]
+image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
 
 toc::[]
 
