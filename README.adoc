@@ -4,7 +4,7 @@ image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,
 
 = defiant
 
-image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
+image:[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
 Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
 :toc: macro
 :toclevels: 3
@@ -84,37 +84,6 @@ Defiant is a testing framework for **authorization bypass detection** — design
 == Technology Stack
 
 Defiant follows the link:https://github.com/hyperpolymath/rhodium-standard-repositories[Rhodium Standard Repository (RSR)] guidelines.
-
-=== Permitted Languages
-
-[cols="1,2"]
-|===
-| Language | Use Case
-
-| *Rust*
-| Performance-critical core, CLI tools, WASM
-
-| *ReScript*
-| Primary application code (compiles to JS)
-
-| *Deno*
-| Runtime and package management
-
-| *Gleam*
-| Backend services (BEAM/JS target)
-
-| *Guile Scheme*
-| Configuration and state files
-
-| *Bash/POSIX Shell*
-| Automation scripts
-|===
-
-=== Explicitly Forbidden
-
-TypeScript, Node.js, npm, Go, general Python, Java, Kotlin, Swift, React Native, Flutter
-
-See link:.claude/CLAUDE.md[CLAUDE.md] for complete language policy.
 
 == Installation
 
