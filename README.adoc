@@ -156,3 +156,8 @@ See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] (forthcoming).
 * *Framework:* RSR (Rhodium Standard Repository)
 * *Author:* Jonathan D.A. Jewell
 * *ORCID:* 0000-0002-1234-5678
+
+
+== Architecture
+
+See link:TOPOLOGY.md[TOPOLOGY.md] for a visual architecture map and completion dashboard.
