@@ -41,7 +41,7 @@ toc::[]
 | ✓ Done
 
 | License Structure
-| MIT OR AGPL-3.0-or-later + Palimpsest
+| MIT OR PMPL-1.0-or-later + Palimpsest
 | ✓ Done
 |===
 
