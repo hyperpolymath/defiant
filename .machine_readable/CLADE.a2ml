@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: PMPL-1.0-or-later
+# Clade declaration — part of the gv-clade-index registry
+# See: https://github.com/hyperpolymath/gv-clade-index
+
+[identity]
+uuid = "0d5de5f7-6615-5f92-ad0b-5bdd693bde42"
+primary-forge = "github"
+primary-owner = "hyperpolymath"
+canonical-name = "defiant"
+prefixed-name = "sc-defiant"
+
+[clade]
+primary = "sc"
+secondary = []
+assigned = "2026-03-16"
+rationale = ""
+
+[forges]
+github = "hyperpolymath/defiant"
+gitlab = "hyperpolymath/defiant"
+bitbucket = "hyperpolymath/defiant"
+
+[lineage]
+type = "standalone"
+parent = "Defiance/resistance security tool"
+born = "2026-03-16"
