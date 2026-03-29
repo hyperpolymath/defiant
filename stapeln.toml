@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: PMPL-1.0-or-later
+
+[project]
+name = "defiant"
+description = "Defiant"
+
+[container]
+base = "cgr.dev/chainguard/wolfi-base:latest"
