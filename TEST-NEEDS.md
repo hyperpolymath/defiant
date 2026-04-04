@@ -12,7 +12,8 @@
 
 ## What's Covered
 
-COVERAGE_ITEMS
+- [x] Tests present and running
+- [x] CI integration active
 
 ## Still Missing (for CRG B+)
 
