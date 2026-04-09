@@ -20,7 +20,7 @@ checks:
 
   - name: policy-compiles
     description: "policy/policy.ncl must compile."
-    run: "nickel check policy/policy.ncl"
+    run: "nickel typecheck policy/policy.ncl"
 
   - name: gateway-exposes-port
     description: "Service must expose the configured port."
