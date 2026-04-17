@@ -5,7 +5,7 @@ image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,
 = defiant
 
 image:[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
-Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
+Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 :toc: macro
 :toclevels: 3
 :icons: font
