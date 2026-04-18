@@ -107,7 +107,7 @@ toc::[]
 |===
 | Item | Description | Status
 
-| justfile
+| Justfile
 | Task runner with actual implementations
 | ○ Pending
 
