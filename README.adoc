@@ -1,5 +1,5 @@
 image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
-// SPDX-License-Identifier: PMPL-1.0-or-later
+// SPDX-License-Identifier: MPL-2.0
 // SPDX-FileCopyrightText: 2025 hyperpolymath
 
 = defiant
@@ -136,7 +136,7 @@ See link:ROADMAP.adoc[ROADMAP.adoc] for the development plan.
 Dual-licensed under:
 
 * Palimpsest-MPL-1.0 License
-* PMPL-1.0-or-later
+* MPL-2.0
 
 With additional philosophical overlay: LicenseRef-Palimpsest-0.5
 

@@ -1,5 +1,5 @@
 K9!
-# SPDX-License-Identifier: PMPL-1.0-or-later
+# SPDX-License-Identifier: MPL-2.0
 # Repo-local K9 validator required by .machine_readable/MUST.contractile.
 # This file remains data-only and can be consumed by K9 tooling.
 
