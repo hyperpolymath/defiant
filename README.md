@@ -1,0 +1,165 @@
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/hyperpolymath)
+
+image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
+// SPDX-License-Identifier: MPL-2.0
+// SPDX-FileCopyrightText: 2025 hyperpolymath
+
+= defiant
+
+image:[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
+Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
+:toc: macro
+:toclevels: 3
+:icons: font
+:source-highlighter: rouge
+:experimental:
+:url-github: https://github.com/hyperpolymath/defiant
+:url-gitlab: https://gitlab.com/hyperpolymath/defiant
+:url-bitbucket: https://bitbucket.org/hyperpolymath/defiant
+:url-codeberg: https://codeberg.org/hyperpolymath/defiant
+
+*Authorization Bypass Detection Testing Framework*
+
+image:https://img.shields.io/badge/RSR-Certified-gold[RSR Certified,link=https://github.com/hyperpolymath/rhodium-standard-repositories]
+image:https://img.shields.io/badge/Status-Specification-orange[Status: Specification]
+image:https://img.shields.io/badge/Version-0.1.0-blue[Version 0.1.0]
+image:https://img.shields.io/badge/License-PMPL--1.0-blue.svg[License: PMPL-1.0,link="https://github.com/hyperpolymath/palimpsest-license"]
+
+toc::[]
+
+== Project Status
+
+[IMPORTANT]
+====
+*This repository is currently at the specification and infrastructure stage.*
+
+The CI/CD pipelines, language policies, and project scaffolding are complete. +
+The core framework implementation is forthcoming.
+====
+
+== What is Defiant?
+
+Defiant is a testing framework for **authorization bypass detection** — designed to help security professionals and developers identify access control vulnerabilities in their systems.
+
+=== Intended Capabilities
+
+* Detection of authorization bypass patterns
+* Testing framework for access control validation
+* Integration with security testing pipelines
+* Compliance with RSR (Rhodium Standard Repository) guidelines
+
+== Current Repository Contents
+
+[cols="2,3,1"]
+|===
+| Component | Description | Status
+
+| CI/CD Infrastructure
+| 11 GitHub Actions workflows enforcing language policy, security standards, and quality gates
+| ✓ Complete
+
+| Language Policy
+| RSR-compliant stack (Rust, ReScript, Deno, Gleam, Guile Scheme)
+| ✓ Complete
+
+| Security Policy Enforcement
+| Blocks weak crypto, HTTP URLs, hardcoded secrets
+| ✓ Complete
+
+| Multi-Mirror Distribution
+| Synchronized to GitHub, GitLab, Bitbucket, Codeberg
+| ✓ Complete
+
+| Core Framework
+| Authorization bypass detection engine
+| ○ Pending
+
+| Test Suites
+| Framework validation and example tests
+| ○ Pending
+
+| Documentation
+| Usage guides and API reference
+| ○ Pending
+|===
+
+== Technology Stack
+
+Defiant follows the link:https://github.com/hyperpolymath/rhodium-standard-repositories[Rhodium Standard Repository (RSR)] guidelines.
+
+== Installation
+
+[source,bash]
+----
+# Clone from GitHub (primary)
+git clone https://github.com/hyperpolymath/defiant
+
+# Or from mirrors
+git clone https://gitlab.com/hyperpolymath/defiant
+git clone https://codeberg.org/hyperpolymath/defiant
+----
+
+=== Package Managers
+
+[source,bash]
+----
+# Guix (preferred)
+guix shell -f guix.scm
+
+# Nix (fallback)
+nix develop  # when flake.nix is available
+----
+
+== Mirrors
+
+[cols="1,2"]
+|===
+| Platform | URL
+
+| GitHub (primary)
+| {url-github}
+
+| GitLab
+| {url-gitlab}
+
+| Bitbucket
+| {url-bitbucket}
+
+| Codeberg
+| {url-codeberg}
+|===
+
+== Roadmap
+
+See link:ROADMAP.adoc[ROADMAP.adoc] for the development plan.
+
+== License
+
+Dual-licensed under:
+
+* Palimpsest-MPL-1.0 License
+* MPL-2.0
+
+With additional philosophical overlay: LicenseRef-Palimpsest-0.5
+
+See link:LICENSE.txt[LICENSE.txt] for details.
+
+== Citation
+
+See link:docs/CITATIONS.adoc[docs/CITATIONS.adoc] for citation formats.
+
+== Contributing
+
+See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] (forthcoming).
+
+== Metadata
+
+* *Domain:* software-development, security-testing
+* *Framework:* RSR (Rhodium Standard Repository)
+* *Author:* Jonathan D.A. Jewell
+* *ORCID:* 0000-0002-1234-5678
+
+
+== Architecture
+
+See link:TOPOLOGY.md[TOPOLOGY.md] for a visual architecture map and completion dashboard.
