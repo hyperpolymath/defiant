@@ -1,6 +1,6 @@
 {{~ Aditionally delete this line and fill out the template below ~}}
 
-# {{PROJECT}} ABI/FFI Documentation
+# DEFIANT ABI/FFI Documentation
 
 ## Overview
 
@@ -247,7 +247,7 @@ gcc -o example example.c -l{{project}} -L./zig-out/lib
 ### From Idris2
 
 ```idris
-import {{PROJECT}}.ABI.Foreign
+import DEFIANT.ABI.Foreign
 
 main : IO ()
 main = do
