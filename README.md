@@ -59,7 +59,7 @@ Defiant is a testing framework for **authorization bypass detection** — design
 | ✓ Complete
 
 | Language Policy
-| RSR-compliant stack (Rust, ReScript, Deno, Gleam, Guile Scheme)
+| RSR-compliant stack (Rust, AffineScript, Deno, Gleam, Guile Scheme)
 | ✓ Complete
 
 | Security Policy Enforcement
@@ -106,8 +106,8 @@ git clone https://codeberg.org/hyperpolymath/defiant
 # Guix (preferred)
 guix shell -f guix.scm
 
-# Nix (fallback)
-nix develop  # when flake.nix is available
+# Guix (fallback)
+guix develop  # when flake.guix is available
 ----
 
 == Mirrors
