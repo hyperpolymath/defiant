@@ -4,6 +4,8 @@
 version: 'v0.0.2'
 workflows:
     '.github/workflows/governance.yml': []
+    '.github/workflows/label-triage.yml': []
+    '.github/workflows/labels.yml': []
     '.github/workflows/mirror.yml': []
     '.github/workflows/scorecard.yml': []
     '.github/workflows/casket-pages.yml':
