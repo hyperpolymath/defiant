@@ -30,7 +30,7 @@ workflows:
     '.github/workflows/labels.yml': []
     '.github/workflows/mirror.yml': []
     '.github/workflows/push-email-notify.yml':
-        - 'hyperpolymath/smtp-notify-action@v0.1.0'
+        - 'hyperpolymath/smtp-notify-action@v0.2.0'
     '.github/workflows/scorecard.yml': []
     '.github/workflows/secret-scanner.yml':
         - 'actions/checkout@v6.0.2'
@@ -126,9 +126,9 @@ dependencies:
         commit: 'sha1-89f3c2702f4f650a92aa7411502f38da06abd562'
         owner_id: 6759885
         repo_id: 1275650185
-    'hyperpolymath/smtp-notify-action@v0.1.0':
-        ref: 'v0.1.0'
-        commit: 'sha1-1b3b752d39a4fe4c0f28f10905e4608789d3e050'
+    'hyperpolymath/smtp-notify-action@v0.2.0':
+        ref: 'v0.2.0'
+        commit: 'sha1-ede1191ef6ff3ac02c4f4d9efdf837ee517e11d7'
         owner_id: 6759885
         repo_id: 1352485172
     'peter-evans/repository-dispatch@v4.0.1':
