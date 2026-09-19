@@ -96,7 +96,7 @@ toc::[]
 | Security policy document
 | ○ Pending
 
-| CONTRIBUTING.adoc
+| .github/CONTRIBUTING.md
 | Contribution guidelines
 | ○ Pending
 |===
@@ -252,4 +252,4 @@ toc::[]
 
 This roadmap is a living document. Contributions, suggestions, and feedback are welcome.
 
-See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] for guidelines (forthcoming).
+See link:.github/CONTRIBUTING.md[.github/CONTRIBUTING.md] for guidelines (forthcoming).

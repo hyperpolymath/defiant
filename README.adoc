@@ -188,7 +188,7 @@ See link:docs/CITATIONS.adoc[docs/CITATIONS.adoc] for citation formats.
 
 == Contributing
 
-See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] (forthcoming).
+See link:.github/CONTRIBUTING.md[.github/CONTRIBUTING.md] (forthcoming).
 
 == Metadata
 
