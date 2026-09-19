@@ -131,7 +131,7 @@ https://codeberg.org/hyperpolymath/defiant —-
 
 == Guix (preferred)
 
-guix shell -f guix.scm
+guix shell -f build/guix.scm
 
 == Guix (fallback)
 
