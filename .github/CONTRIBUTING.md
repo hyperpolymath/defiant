@@ -1,6 +1,7 @@
 # Clone the repository
 
-git clone <https://github.com/hyperpolymath/defiant.git> cd defiant
+git clone https://github.com/hyperpolymath/defiant.git
+cd defiant
 
 # Using Guix (recommended for reproducibility)
 
@@ -8,36 +9,36 @@ guix develop
 
 # Or using toolbox/distrobox
 
-toolbox create defiant-dev toolbox enter defiant-dev \# Install
-dependencies manually
+toolbox create defiant-dev
+toolbox enter defiant-dev
+# Install dependencies manually
 
 # Verify setup
 
-just check \# or: cargo check / mix compile / etc. just test \# Run test
-suite
+just check   # or: cargo check / mix compile / etc.
+just test    # Run test suite
 
+### Repository Structure
 
-    ### Repository Structure
-
-defiant/ ├── src/ \# Source code (Perimeter 1-2) ├── lib/ \# Library
-code (Perimeter 1-2) ├── extensions/ \# Extensions (Perimeter 2) ├──
-plugins/ \# Plugins (Perimeter 2) ├── tools/ \# Tooling (Perimeter 2)
-├── docs/ \# Documentation (Perimeter 3) │ ├── architecture/ \# ADRs,
-specs (Perimeter 2) │ └── proposals/ \# RFCs (Perimeter 3) ├── examples/
-\# Examples (Perimeter 3) ├── spec/ \# Spec tests (Perimeter 3) ├──
-tests/ \# Test suite (Perimeter 2-3) ├── .well-known/ \# Protocol files
-(Perimeter 1-3) ├── .github/ \# GitHub config (Perimeter 1) │ ├──
+defiant/ ├── src/ # Source code (Perimeter 1-2) ├── lib/ # Library
+code (Perimeter 1-2) ├── extensions/ # Extensions (Perimeter 2) ├──
+plugins/ # Plugins (Perimeter 2) ├── tools/ # Tooling (Perimeter 2)
+├── docs/ # Documentation (Perimeter 3) │ ├── architecture/ # ADRs,
+specs (Perimeter 2) │ └── proposals/ # RFCs (Perimeter 3) ├── examples/
+# Examples (Perimeter 3) ├── spec/ # Spec tests (Perimeter 3) ├──
+tests/ # Test suite (Perimeter 2-3) ├── .well-known/ # Protocol files
+(Perimeter 1-3) ├── .github/ # GitHub config (Perimeter 1) │ ├──
 ISSUE_TEMPLATE/ │ └── workflows/ ├── CHANGELOG.md ├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md \# This file ├── GOVERNANCE.md ├── LICENSE ├──
-MAINTAINERS.md ├── README.adoc ├── SECURITY.md ├── flake.guix \# Guix
-flake (Perimeter 1) └── Justfile \# Task runner (Perimeter 1)
+├── CONTRIBUTING.md # This file ├── GOVERNANCE.md ├── LICENSE ├──
+MAINTAINERS.md ├── README.adoc ├── SECURITY.md ├── flake.guix # Guix
+flake (Perimeter 1) └── Justfile # Task runner (Perimeter 1)
 
 
     ---
 
-    ## How to Contribute
+## How to Contribute
 
-    ### Reporting Bugs
+### Reporting Bugs
 
     **Before reporting**:
     1. Search existing issues
@@ -54,7 +55,7 @@ flake (Perimeter 1) └── Justfile \# Task runner (Perimeter 1)
     - Expected vs actual behaviour
     - Logs, screenshots, or minimal reproduction
 
-    ### Suggesting Features
+### Suggesting Features
 
     **Before suggesting**:
     1. Check the [roadmap](ROADMAP.md) if available
@@ -70,7 +71,7 @@ flake (Perimeter 1) └── Justfile \# Task runner (Perimeter 1)
     - Alternatives considered
     - Which perimeter this affects
 
-    ### Your First Contribution
+### Your First Contribution
 
     Look for issues labelled:
 
@@ -81,22 +82,25 @@ flake (Perimeter 1) └── Justfile \# Task runner (Perimeter 1)
 
     ---
 
-    ## Development Workflow
+## Development Workflow
 
-    ### Branch Naming
+### Branch Naming
 
-docs/short-description \# Documentation (P3) test/what-added \# Test
-additions (P3) feat/short-description \# New features (P2)
-fix/issue-number-description \# Bug fixes (P2) refactor/what-changed \#
-Code improvements (P2) security/what-fixed \# Security fixes (P1-2)
+docs/short-description # Documentation (P3) test/what-added # Test
+additions (P3) feat/short-description # New features (P2)
+fix/issue-number-description # Bug fixes (P2) refactor/what-changed #
+Code improvements (P2) security/what-fixed # Security fixes (P1-2)
 
 
-    ### Commit Messages
+### Commit Messages
 
     We follow [Conventional Commits](https://www.conventionalcommits.org/):
 
-():
+type(scope): description
 
+Body: what changed and why.
+
+Footer: issue reference, e.g. Closes #123
 \[optional body\]
 
 \[optional footer\]
