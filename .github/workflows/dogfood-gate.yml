@@ -36,7 +36,7 @@ jobs:
           COUNT=$(find . \( -name '*.a2ml' -o -name '*.deed' \) -not -path './.git/*' | wc -l)
           echo "count=$COUNT" >> "$GITHUB_OUTPUT"
           if [ "$COUNT" -eq 0 ]; then
-            echo "::warning::No .a2ml/.deed manifest files found. Every RSR repo should have a repo deed (<reponame>_chora.deed); legacy 0-AI-MANIFEST.a2ml accepted mid-migration — a2ml retired: standards #837"
+            echo "::warning::No .a2ml/.deed manifest files found. Every RSR repo should have a repo deed (<reponame>_chora.deed); legacy 0-AI-MANIFEST.a2ml accepted mid-migration — standards #837"
           fi
 
       - name: Validate DEED manifests
@@ -102,7 +102,7 @@ jobs:
             cat <<'EOF' >> "$GITHUB_STEP_SUMMARY"
           ## K9 Contract Validation
 
-          :warning: **No K9 contract files found.** Repos with configuration files should have K9 contracts.
+          :warning: **No .a2ml/.deed manifest files found.** Every RSR-compliant repo should have a repo deed (`<reponame>_chora.deed`) at its root.
 
           Generate contracts with: `k9iser generate .`
           EOF
@@ -253,7 +253,7 @@ jobs:
           MAX=5
 
           # DEED manifest present?
-          if find . -name '*.a2ml' -not -path './.git/*' | head -1 | grep -q .; then
+          if find . \( -name '*.a2ml' -o -name '*.deed' \) -not -path './.git/*' | head -1 | grep -q .; then
             SCORE=$((SCORE + 1))
             DEED_STATUS=":white_check_mark:"
           else
@@ -299,7 +299,7 @@ jobs:
 
           | Tool/Format | Status | Notes |
           |-------------|--------|-------|
-          | DEED manifest (<reponame>_chora.deed, or legacy .a2ml) | ${DEED_STATUS} | Required for all RSR repos |
+          | DEED repo deed (`<reponame>_chora.deed`) | ${DEED_STATUS} | Required for all RSR repos |
           | K9 contracts | ${K9_STATUS} | Required for repos with config files |
           | .editorconfig | ${EC_STATUS} | Required for all repos |
           | Groove endpoint | ${GROOVE_STATUS} | Required for service repos |
