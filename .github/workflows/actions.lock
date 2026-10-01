@@ -27,10 +27,7 @@ workflows:
     '.github/workflows/push-email-notify.yml':
         - 'hyperpolymath/smtp-notify-action@v0.2.0'
     '.github/workflows/scorecard.yml': []
-    '.github/workflows/secret-scanner.yml':
-        - 'actions/checkout@v6.0.2'
-        - 'gitleaks/gitleaks-action@v2.3.9'
-        - 'trufflesecurity/trufflehog@v3.93.8'
+    '.github/workflows/secret-scanner.yml': []
     '.github/workflows/workflow-linter.yml':
         - 'actions/checkout@v4.1.1'
 dependencies:
